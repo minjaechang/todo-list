@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import './App.css';
+import TodoList from './components/TodoList';
 
 function App() {
   const [todo, setInput] = useState('');
@@ -57,20 +58,7 @@ function App() {
         </form>
       </div>
 
-      {/* list */}
-      <div className='todo'>
-        <ul className='todo-list'>
-          {todoList.map((todo) => (
-            <li key={todo.id} className='todo-item'>
-              <input type='checkbox' />
-              <span>{todo.name}</span>
-              <button className='delete' onClick={() => handleDelete(todo.id)}>
-                delete
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <TodoList todoList={todoList} onDelete={handleDelete} />
     </div>
   );
 }
