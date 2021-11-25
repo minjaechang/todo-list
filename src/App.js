@@ -40,7 +40,6 @@ function App() {
         todoList={todoList}
         onAdd={handleAdd}
       />
-
       <TodoList todoList={todoList} onDelete={handleDelete} />
     </div>
   );

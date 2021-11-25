@@ -1,0 +1,24 @@
+.form {
+  padding: 7rem;
+  padding-bottom: 2rem;
+}
+
+.form__title {
+  padding-bottom: 0.5rem;
+}
+
+.form__input {
+  width: 20rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.form__add-btn {
+  margin: auto;
+  margin-left: 1rem;
+  padding: 0.3rem;
+  background-color: transparent;
+  border: none;
+}

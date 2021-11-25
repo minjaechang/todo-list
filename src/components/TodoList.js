@@ -1,4 +1,5 @@
 import Todo from './Todo';
+import './TodoList.css';
 
 export default function TodoList({ todoList, onDelete }) {
   return (

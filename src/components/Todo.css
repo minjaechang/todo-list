@@ -1,0 +1,6 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 1.8rem;
+}
