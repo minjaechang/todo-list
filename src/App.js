@@ -26,6 +26,12 @@ function App() {
     setTodoList([newTodo, ...todoList]);
   };
 
+  const handleDelete = (id) => {
+    const updatedTodos = todoList.filter((todo) => todo.id !== id);
+
+    setTodoList(updatedTodos);
+  };
+
   useEffect(() => {
     inputRef.current.focus();
   }, [todoList]);
@@ -58,7 +64,9 @@ function App() {
             <li key={todo.id} className='todo-item'>
               <input type='checkbox' />
               <span>{todo.name}</span>
-              <button className='delete'>delete</button>
+              <button className='delete' onClick={() => handleDelete(todo.id)}>
+                delete
+              </button>
             </li>
           ))}
         </ul>
