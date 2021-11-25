@@ -16,9 +16,16 @@
 }
 
 .form__add-btn {
+  display: block;
   margin: auto;
-  margin-left: 1rem;
   padding: 0.3rem;
   background-color: transparent;
-  border: none;
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+}
+
+.form__add-btn:hover {
+  cursor: pointer;
+  background-color: green;
+  color: white;
 }

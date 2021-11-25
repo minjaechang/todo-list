@@ -4,3 +4,8 @@
   list-style: none;
   padding-bottom: 1.8rem;
 }
+
+.todo__delete-btn:hover {
+  cursor: pointer;
+  color: red;
+}
